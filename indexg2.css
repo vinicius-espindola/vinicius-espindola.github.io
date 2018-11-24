@@ -4,11 +4,55 @@
 
 nav {	
 	background-color: lightgray;
-	color: blue;
 	width: 100%;
 	text-align: left;
+	margin-bottom: 0px;
+	list-style-type: none;
 
 }
+
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+#a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 
 header{
 	background-color: white;
@@ -22,26 +66,42 @@ header{
 
 section {
 	width: 100%;
-	color:blue;
-	
+	color: blue;
+	margin-top: 0px;
+}
+
+iframe {
+	border-color: lightgray;
 }
 
 #home {
 	width: 100%;
-	background-color: blue;
+	background-color: transparent;
 	margin-left: 0px;
-	margin-top: 1px;
+	margin-top: 0px;
+
 }
 
+
 .carousel-inner img {
-      max-height: 300px;
-      max-width: : 800px;
       width: 100%;
+      max-width: 1100px;
+      max-height: 900px;
   }
+
+#myCarousel {
+	width: 100%;
+	height: 100%;
+}
+
+ ul{
+ 	list-style-type: none;
+ }
 
 #h4 {
 	color: #000000;
 }
+
 
 
 #Sobre {
@@ -52,6 +112,13 @@ section {
 	margin-left: 0px;
 }
 
+#tecnico {
+	max-height: 500px;
+	max-width: 600px;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
 #serviços {
 	width: 100%;
 	padding-left: 20px;
@@ -59,6 +126,7 @@ section {
 	padding-top: 5px;
 	margin-left: 0px;
 	text-align: left;
+	padding-bottom: 5px;
 }
 
 #serviços1 {
@@ -88,4 +156,16 @@ section {
 #marcas {
 	width: 100%;
 	height: 200px;
+}
+
+#contato {
+	width: 100%;
+	padding-left: 20px;
+	padding-top: 5px;
+	margin-left: 0px;
+}
+
+#contato1 {
+	padding-left: 15px;
+	width: 100%;
 }
