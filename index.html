@@ -17,7 +17,27 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<!-- Logo na aba do navegador -->
+<link rel="shortcut icon" href="logosmart.img" type="image/x-icon"/>
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+$(document).ready(function(){
+    $("#btntela").click(function(){
+        $("#modaltela").modal();
+    });
+});
+
+$(document).ready(function(){
+    $("#btnatual").click(function(){
+        $("#modalatual").modal();
+    });
+});
+</script>
+
 
 </head>
 <body>
@@ -31,13 +51,16 @@
 				<div class="col-md-7">
 					<h2 class="display-3"> Smart Solutions </h2>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3" id="iconwhats">
 					<ul>
 					<li class="list-inline-item">
-                	<a class="btn btn-outline-light btn-social text-center rounded-circle"  href="https://web.whatsapp.com/" title="51998316705" style="font-size: 20px"><b> 51 998316705 </b>
-					<i class="fa fa-whatsapp" style="font-size:36px"> </i> 
+                	 
+					<i class="fa fa-whatsapp" style="font-size:36px"></i><a class="btn btn-outline-light btn-social text-center rounded-circle"  href="https://web.whatsapp.com/" title="51998316705" style="font-size: 20px"><b> 51 998316705 </b>
 					</a>
+					</li>
 					</ul>
+					
+ 
 				</div>
 			</div>
 		</div>	
@@ -148,7 +171,7 @@
 				O laboratório da Smart Solutions conta com equipamentos de última geração, especiais para realizar o conserto em todas as marcas de celular, sendo eles nacionais ou importados. </h5>
 			</div>
 			<div class="col-md-5" id="tecnico">
-				<img class="img-thumbnail" src="tecnico.img">
+				<img class="img-thumbnail" src="tecnico.img" id="imgtecnico">
 			</div>
 		</div>
 				<br>
@@ -180,14 +203,32 @@
 				<br>
 				<img class="img-thumbnail" src="trocartela.img" alt="trocartela" id="tela" title="troca de tela" style="width: 250px; height: 200px;">
 				<hr>
-				<h5 class="font-weight-light mb-0 text-justify"> <b> Porque Trocar a tela do seu Celular? </b> </h5>
 
-					<p class="font-weight-light mb-0 text-justify"> Seu celular com design como novo.</p>
-					<p class="font-weight-light mb-0 text-justify"> Funcionamento da tela normalizada. </p>
-					
-			</div>
-
-
+				<!--Modal tela-->
+				<button type="button" class="btn btn-info btn-lg" id="btntela"> Saiba mais </button>
+					<div class="modal fade" id="modaltela" role="dialog">
+    					<div class="modal-dialog">
+    						<div class="modal-content">
+        					<div class="modal-header">
+          						<h4 class="font-weight-light text-center"><b> Porque trocar a tela do seu Smartphone? </b></h4>
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        		</div>
+        			<div class="modal-body">
+          				<p class="font-weight-light mb-0 text-center"> Seu celular com design como novo.</p>
+						<p class="font-weight-light mb-0 text-center"> Funcionamento da tela normalizada. </p>
+						<p class="font-weight-light mb-0 text-center"> E ainda aproveitar nossa super <b><i>Black Friday</i></b> </p>
+						<p class="font-weight-light mb-0 text-center"> Só aqui você ganha 1 ano de garantia e película de vidro grátis! </p>
+						<h5 class="font-weight-light mb-0 text-center"> <b> CORRA E APROVEITE! </b></h5>
+						<br>
+						<p class="font-weight-light mb-0 text-center"><b> "Não esqueça que o cafézinho e o orçamento são por nossa conta!" </b></p>
+        			</div>
+        			<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal"> Fechar </button>
+        	</div>
+      	</div>
+      </div>
+  </div>
+  </div>
 			<div class="col-md-1"> </div>
 			
 			<div class="col-md-3" id="atual1">
@@ -196,10 +237,28 @@
 				<br>
 				<img class="img-thumbnail" src="iosandroid.img" alt="Atualização de software" id="atual" title="Atualização de software" style="width: 250px; height: 200px;">
 				<hr>
-				<h5 class="font-weight-light mb-0 text-justify"> <b> Atualize seu celular e tenha disponível todas as otimizações de aplicativos e sistema. </b> </h5>
-					
-					<p class="font-weight-light mb-0 text-justify"> Atendemos diferentes modelos de Android e sistema iOS. </p>
-
+				<!--Modal atualizar software-->
+				<button type="button" class="btn btn-info btn-lg" id="btnatual"> Saiba mais </button>
+					<div class="modal fade" id="modalatual" role="dialog">
+    					<div class="modal-dialog">
+    						<div class="modal-content">
+        					<div class="modal-header">
+          						<h4 class="font-weight-light text-center"> <b> Atualize seu celular e tenha disponível todas as otimizações de aplicativos e sistema. </b> </h4>
+          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        		</div>
+        			<div class="modal-body">
+          				<p class="font-weight-light mb-0 text-center"> Atendemos diferentes modelos de Android e sistema iOS </p>
+						<p class="font-weight-light mb-0 text-center"> Correções do sistema antigo </p>
+						<p class="font-weight-light mb-0 text-center"> Estabilidade e melhorias no funcionamento e desempenho </p>
+						<br>
+						<p class="font-weight-light mb-0 text-center"><b> "Não esqueça que o cafézinho e o orçamento são por nossa conta!" </b></p>
+        			</div>
+        			<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal"> Fechar </button>
+        	</div>
+      	</div>
+      </div>
+  </div>
 			</div>
 			
 
@@ -221,32 +280,62 @@
 	</section>
 
 	<!-- Contato-->
-	<section class="row" id="contato">
+	<section class="row" id="Contato">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12" id="contato1">
 					<h3 class="display-4"> Onde nos encontrar? </h3>
 					<hr>
 					<div class="row">
-						<div class="col-md-6">
-							<h5 class="font-weight-light mb-0 text-justify"> Rua São João, 73 Loja 01 </h5>
+						<div class="col-md-5" id="endereco">
+							<h5 class="font-weight-light mb-0 text-justify"> Rua São João, 2-194 Loja 01 </h5>
 							<h5 class="font-weight-light mb-0 text-justify"> Vila São João - Torres - RS </h5>
-							<h5 class="font-weight-light mb-0 text-justify"> CEP 95560-000</h5>	
-						</div>
-						<div class="col-md-4">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.2496677552012!2d-49.78176378522382!3d-29.304351204207155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95226d9b5ca9a8c1%3A0x9d73c66efd019dde!2sSmart+solutions!5e0!3m2!1spt-BR!2sbr!4v1543021135743" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-10">
-							<h3 class="font-weight-light mb-0 text-justify"> <b>Redes Sociais</b> </h4>
-						</div>
-					</div>
+							<h5 class="font-weight-light mb-0 text-justify"> CEP 95560-000 </h5>
+							<br>
+							<h5 class="font-weight-light mb-0 text-justify"> <b> <i>  "Venha conhecer nossa loja!" </i></b></h5>
+							<h5 class="font-weight-light mb-0 text-justify"><b> <i> "O cafézinho e o orçamento são por nossa conta!" </i> </b> </h5>
+							<hr>
+							<h5 class="font-weight-light mb-0 text-justify" style="font-size: 36px"> <b> Horário de atendimento </b> </h5>
+							<br>
+							<h5 class="font-weight-light mb-0 text-justify"> Segunda à sábado das 9:00 às 18:00 hrs </h5>
+							<hr>
+							<h5 class="font-weight-light mb-0 text-justify" style="font-size: 36px"> <b> Nossas redes sociais </b> </h5>
+							<br>
 
+							<ul>
+								<a class="btn btn-outline-light btn-social text-left rounded-circle"  href="https://web.whatsapp.com/" title="51998316705">
+								<li class="list-inline-item">
+                	 			<i class="fa fa-whatsapp" style="font-size:36px"></i>
+                	 			</a>
+                	 			</li>
+                	 	
+								<li class="list-inline-item">
+                	 			<a class="btn btn-outline-light btn-social text-left rounded-circle"  href="https://www.facebook.com/vinicius.espindola.10" title="facebook">
+								<i class="fa fa-facebook" style="font-size:36px"></i></a>
+								</li>
+
+								<li class="list-inline-item">
+                	 			<a class="btn btn-outline-light btn-social text-left rounded-circle"  href="https://www.instagram.com/viniespindolaa/?hl=pt-br" title="instagram"> <i class="fa fa-instagram" style="font-size:36px"></i></a>
+								</li>
+								<li class="list-inline-item">
+                	 			<a class="btn btn-outline-light btn-social text-left rounded-circle"  href="https://twitter.com/espindola_vini" title="twitter"> <i class="fa fa-twitter" style="font-size:36px"></i></a>
+                	 			</li>
+                	 		</ul>
+						</div>
+						<div class="col-md-6">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.2496677552012!2d-49.78176378522382!3d-29.304351204207155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95226d9b5ca9a8c1%3A0x9d73c66efd019dde!2sSmart+solutions!5e0!3m2!1spt-BR!2sbr!4v1543021135743" width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+						</div>
+					</div>
+						</div>
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
 
 
 </div>	
