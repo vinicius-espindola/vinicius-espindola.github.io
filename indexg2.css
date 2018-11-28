@@ -1,6 +1,8 @@
 
 
-
+html{
+	overflow-x:hidden;
+}
 
 nav {	
 	background-color: lightgray;
@@ -8,7 +10,6 @@ nav {
 	text-align: left;
 	margin-bottom: 0px;
 	list-style-type: none;
-
 }
 
 a:link {
@@ -67,7 +68,13 @@ header{
 section {
 	width: 100%;
 	color: blue;
-	margin-top: 0px;
+	margin: 0px;
+}
+
+#footer {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-left: 0px;
 }
 
 #endereco {
@@ -80,22 +87,36 @@ section {
 
 #home {
 	width: 100%;
-	background-color: transparent;
+	background-color: #333333;
 	margin-left: 0px;
 	margin-top: 0px;
 
 }
 
+.modal-body{
+	background-color: lightgray;
+}
 
-.carousel-inner img {
-      width: 100%;
-      max-width: 1100px;
-      max-height: 900px;
-  }
+
+
+
+#controlright {
+	background-color: #000000;
+	
+}
+
+#controlleft {
+	background-color: #000000;
+}
 
 #myCarousel {
-	width: 100%;
+	width: 90%;
 	height: 100%;
+	text-align: center;
+}
+
+.carousel-indicators li {
+    text-align:center;
 }
 
  ul{
@@ -123,6 +144,22 @@ hr {
     
 }
 
+#btntela {
+	background-color: blue;
+	border-color: #000000;
+
+}
+
+#btnatual {
+	background-color: blue;
+	border-color: #000000
+}
+
+#btnacessorios {
+	background-color: blue;
+	border-color: #000000
+}
+
 #tecnico {
 	
 	padding-top: 15px;
@@ -143,7 +180,7 @@ hr {
 	padding-top: 20px;
 	margin-left: 0px;
 	text-align: left;
-	padding-bottom: 5px;
+	padding-bottom: 20px;
 }
 
 #serviços1 {
@@ -155,7 +192,6 @@ hr {
 	max-height: 250px;
 	max-width: 250px;
 	border-color: #000000;
-
 }
 
 #atual {
