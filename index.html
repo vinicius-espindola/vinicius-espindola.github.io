@@ -138,18 +138,21 @@ $(document).ready(function(){
       			<a href="#serviços"> <img src="telahome2.img" alt="troca de tela"  width="1100" height="500"></a>
       		<div class="carousel-caption">
       	
-        		<h1 class= "display-3 font-weight-light mb-0 text-center" id="carrosel"> <b> Caiu? Quebrou? </b> </h1>
+        		<h1 class= "font-weight-light mb-0 text-center" id="carrosel" style="font-size: 46px;"> <b> Caiu? Quebrou? </b> </h1>
         		<h1 class="font-weight-light mb-0 text-center"> <b> Aqui você ganha 1 ano de garantia na troca de tela do seu smartphone </b> </h1>
     	
       		</div>
     	</div>
     	<div class="carousel-item">
-      			<a href="#serviços"><img src="acessorios1.img" alt="Acessórios" width="1100" height="500"></a>
-    </div>
-    	<div class="carousel-item">
-      			<a href="#serviços"><img src="atualsoft.img" alt="Atualização software" width="1100" height="500"></a>
+      			<a href="#serviços"><img src="smartacessorios.img" alt="Acessórios" width="1100" height="500"></a>
       		<div class="carousel-caption">
-      			 <h1 class="display-3 font-weight-light mb-0 text-center">  <b> Atendemos diferentes modelos de Android e sistema iOS </b> </h1>
+      			<h1 class="font-weight-light mb-0 text-center" style="font-size: 30px;">  <b> Acessórios originais de todas as marcas e modelos </b> </h1>
+      		</div>
+    	</div>
+    	<div class="carousel-item">
+      			<a href="#serviços"><img src="androidios.img" alt="Atualização software" width="1100" height="500"></a>
+      		<div class="carousel-caption">
+      			 <h1 class="font-weight-light mb-0 text-center" style="font-size: 30px;">  <b> Atendemos diferentes modelos de Android e sistema iOS </b> </h1>
       		</div>
     		</div>
     	<div class="carousel-item">
@@ -180,13 +183,13 @@ $(document).ready(function(){
 			</div>
 		
 		<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-6">
 				<hr>
 				<h5 class="font-weight-light mb-0 text-justify" id="h4"> A Smart Solutions possui uma ampla variedade de serviços voltados para telefonia celular e, com ela, você pode comprar acessórios originais e solicitar assistência técnica para celulares e smartphones das diversas marcas como: Blackberry, HTC, iPhone, LG, Motorola, Nextel, Nokia, Palm, Samsung e Sony Ericsson. O conserto do celular é feito por técnicos altamente capacitados e que oferecem garantia adequada para cada tipo de conserto e aparelho.
 				O laboratório da Smart Solutions conta com equipamentos de última geração, especiais para realizar o conserto em todas as marcas de celular, sendo eles nacionais ou importados. </h5>
 			</div>
-			<div class="col-md-5" id="tecnico">
-				<img class="img-thumbnail" src="tecnico.img" id="imgtecnico">
+			<div class="col-md-6" id="tecnico">
+				<img class="img-thumbnail" src="tecnico.img" id="imgtecnico" style="width: 500px; height: 400px;">
 			</div>
 		</div>
 				<br>
@@ -321,7 +324,7 @@ $(document).ready(function(){
 	<section class="row" id="Contato">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-10" id="contato1">
+				<div class="col-md-12" id="contato1">
 					<h3 class="display-4"> Onde nos encontrar? </h3>
 					<hr>
 					<div class="row">
@@ -359,12 +362,55 @@ $(document).ready(function(){
                 	 			<a class="btn btn-outline-light btn-social text-left rounded-circle"  href="https://twitter.com/espindola_vini" title="twitter"> <i class="fa fa-twitter" style="font-size:36px"></i></a>
                 	 			</li>
                 	 		</ul>
-						</div>
-						<div class="col-md-6">
+                	 	</div>
+                	 	<div class="col-md-6">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.2496677552012!2d-49.78176378522382!3d-29.304351204207155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95226d9b5ca9a8c1%3A0x9d73c66efd019dde!2sSmart+solutions!5e0!3m2!1spt-BR!2sbr!4v1543021135743" width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen></iframe>
-				</div>
+						</div>
+                	</div>
+            </div>			
+	</section>
+
+	<section class="row" id="formulario">
+		<div class="container-fluid">
+			<div class="col-md-12">
+				<h3 class="display-4" style="font-size: 36px;"> <b>Faça agora o seu orçamento sem custo</b> </h3>
 			</div>
-		</div>
+			<hr>
+			<div class="col-lg-8 mx-auto">
+            	<form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <div class="control-group">
+                <div class="form-group">
+  
+                  	<input type="text" class="form-control" placeholder="Nome" name="Nome">
+                  
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="form-group">
+                  
+                	<input type="text" class="form-control" placeholder="Email" name="email">
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="form-group">
+                  	<input type="text" class="form-control" placeholder="Telefone" name="Telefone">
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="form-group">
+                  	<textarea class="form-control" rows="5" placeholder="Deixe sua mensagem" name="mensagem"></textarea>
+                </div>
+            </div>
+            
+            	<div id="success">
+            	</div>
+              	<div class="form-group">
+                	<button type="button" class="btn btn-secondary" style="background-color: blue;">Enviar</button>
+              	</div>
+            	</form>
+          </div>
+        </div>
+	</div>
 	</section>
 	<hr>
 	<footer class="row" id="footer">
