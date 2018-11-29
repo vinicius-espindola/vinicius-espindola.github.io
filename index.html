@@ -24,25 +24,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script>
-$(document).ready(function(){
-    $("#btntela").click(function(){
-        $("#modaltela").modal();
-    });
-});
-
-$(document).ready(function(){
-    $("#btnatual").click(function(){
-        $("#modalatual").modal();
-    });
-});
-
-$(document).ready(function(){
-    $("#btnacessorios").click(function(){
-        $("#modalacessorios").modal();
-    });
-});
-</script>
+<script type="text/JavaScript" src="index.js" ></script>
 
 
 </head>
@@ -79,14 +61,14 @@ $(document).ready(function(){
 
 
 	<!-- barra navegação -->
-	<nav class="navbar navbar-expand-sm  navbar-blue sticky-top">
+	<nav class="navbar-brand navbar-expand-sm  navbar-blue sticky-top">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-2">
   					<a class="navbar-brand" href="#header"> <b> Smart Solutions </b> </a>
   				
   				</div>
-  			<div class="col-md-2">
+  			<div class="col-md-1">
           
   				<ul class="navbar-nav" style="list-style-type: none;">
 
@@ -94,19 +76,24 @@ $(document).ready(function(){
       					<a class="nav-link" href="#home"> <b> Home </b> </a>
     				</li>
     		</div>
-    		<div class="col-md-3">
+    		<div class="col-md-2">
     				<li class="nav-item">
       					<a class="nav-link" href="#Sobre"> <b> Sobre a loja </b> </a>
     				</li>
     			</div>
-    		<div class="col-md-3">
+    		<div class="col-md-2">
     				<li class="nav-item">
       					<a class="nav-link" href="#serviços"> <b> Nossos Serviços </b> </a>
     				</li>
     		</div>
-    			<div class="col-md-1">
+    			<div class="col-md-2">
     				<li class="nav-item">
       					<a class="nav-link" href="#Contato"> <b> Contato </b> </a>
+    				</li>
+				</div>
+				<div class="col-md-3">
+    				<li class="nav-item">
+      					<a class="nav-link" href="#formulario" id="navorçamento"> <b> Orçamento </b> </a>
     				</li>
 				</ul>
 				</div>
@@ -132,7 +119,7 @@ $(document).ready(function(){
   		<div class="row">
   			<div class="col-md-2"> </div>
   			<div class="col-md-9">
-  <!-- slide carrosel -->
+  	<!-- slide carousel-troca de tela -->
   		<div class="carousel-inner">
     		<div class="carousel-item active">
       			<a href="#serviços"> <img src="telahome2.img" alt="troca de tela"  width="1100" height="500"></a>
@@ -143,18 +130,24 @@ $(document).ready(function(){
     	
       		</div>
     	</div>
+
+    <!--slide carousel-acessorios-->
     	<div class="carousel-item">
       			<a href="#serviços"><img src="smartacessorios.img" alt="Acessórios" width="1100" height="500"></a>
       		<div class="carousel-caption">
       			<h1 class="font-weight-light mb-0 text-center" style="font-size: 30px;">  <b> Acessórios originais de todas as marcas e modelos </b> </h1>
       		</div>
     	</div>
+
+    	<!--Slide carousel-atualização de software-->
     	<div class="carousel-item">
       			<a href="#serviços"><img src="androidios.img" alt="Atualização software" width="1100" height="500"></a>
       		<div class="carousel-caption">
       			 <h1 class="font-weight-light mb-0 text-center" style="font-size: 30px;">  <b> Atendemos diferentes modelos de Android e sistema iOS </b> </h1>
       		</div>
     		</div>
+
+    	<!--slide carousel- black friday-->
     	<div class="carousel-item">
     		
       			<a href="#serviços"><img src="black.img" alt="black friday" width="1100" height="500"> </a>
@@ -292,7 +285,7 @@ $(document).ready(function(){
 				<img class="img-thumbnail" src="acessorios1.img" alt="acessórios" id="acessorios" title="Acessórios originais" style="width: 250px; height: 200px; border-color: blue;">
 				<hr>
 
-				<!--Modal atualizar software-->
+				<!--Modal acessórios originnais-->
 						<button type="button" class="btn btn-info btn-lg" id="btnacessorios"> Saiba mais </button>
 					<div class="modal fade" id="modalacessorios" role="dialog">
     					<div class="modal-dialog">
@@ -302,7 +295,7 @@ $(document).ready(function(){
           				<button type="button" class="close" data-dismiss="modal">&times;</button>
         			</div>
         				<div class="modal-body">
-          						<p class="font-weight-light mb-0 text-center"> Atendemos diferentes modelos de Android e sistema iOS </p>
+          						
 								<p class="font-weight-light mb-0 text-center"> Disponibilizamos dos mais diversos tipos de acessórios, das mais variadas marcas e com uma garantia que você só encontra aqui na Smart solutions. </p>
 								<p class="font-weight-light mb-0 text-center"> E ainda aproveitar nossa super <b style="color: #000000"><i>Black Friday</i></b>! </p>
 								<p class="font-weight-light mb-0 text-center"> Na compra do kit capa + película você leva mais 01 capa para você ou para presentear quem você quiser! </p>
@@ -370,6 +363,7 @@ $(document).ready(function(){
             </div>			
 	</section>
 
+	<!--Section Formulário/orçamento-->
 	<section class="row" id="formulario">
 		<div class="container-fluid">
 			<div class="col-md-12">
@@ -413,6 +407,8 @@ $(document).ready(function(){
 	</div>
 	</section>
 	<hr>
+
+	<!--Footer-->
 	<footer class="row" id="footer">
 		<div class="container-fluid">
 			
